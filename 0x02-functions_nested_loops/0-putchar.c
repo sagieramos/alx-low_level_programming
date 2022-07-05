@@ -11,17 +11,14 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-
 int main(void)
-{
-	char *a = "_putchar";
-
-	while (*a)
 	{
-		_putchar(*a);
-		a++;
+	char msgchar[] = "_putchar";
+	int msg;
+	for (msg = 0; msg <= 7; msg++)
+	{
+		_putchar(msgchar[msg]);
 	}
 	_putchar('\n');
-
 	return (0);
 }
