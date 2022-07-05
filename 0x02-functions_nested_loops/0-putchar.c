@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-* Description: Prints _putchar, followed by a new line
-* Return: 0
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-
 int main(void)
 {
 	char msgchar[] = "_putchar";
