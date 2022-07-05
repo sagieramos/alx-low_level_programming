@@ -1,26 +1,28 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * times_table - Prints the 9 times table, starting with 0.
+ * print_to_98 - Prints all natural numbers
+ * from n to 98.
+ *
+ * @n: input number.
+ *
+ * Return: no return.
  */
-
-void times_table(void)
+void print_to_98(int n)
 {
-int a, b, result;
-for (a = 0; a <= 9; a++)
-{
-_putchar('0');
-for (b = 1; b <= 9; b++)
-{
-_putchar(',');
-_putchar(' ');
-result = a * b;
-if (result <= 9)
-_putchar(' ');
-else
-_putchar((result / 10) + '0');
-_putchar((result % 10) + '0');
-}
-_putchar('\n');
-}
+	if (n > 98)
+	{
+		for (; n > 98; n--)
+		{
+			printf("%d, ", n);
+		}
+	}
+	else if (n < 98)
+	{
+		for (; n < 98; n++)
+		{
+			printf("%d, ", n);
+		}
+	}
+	printf("%d\n", n);
 }
