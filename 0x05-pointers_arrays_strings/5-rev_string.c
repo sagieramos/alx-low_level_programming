@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * rev_string - Entry point.
- * @0: Variable holding the string.
+ * @s: Variable holding the string.
  *
  * Return 0
  */
