@@ -7,10 +7,10 @@
 
 int _atoi(char *s)
 {
-	int x, y, z;
+	int x;
+	int y = 0;
+       	int z = -1;
 
-	y = 0;
-	z = -1;
 	for (x = 0; s[x] != '\0'; x++)
 	{
 		if (s[x] == '-')
