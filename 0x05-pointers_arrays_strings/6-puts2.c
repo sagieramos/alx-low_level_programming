@@ -5,7 +5,7 @@
  *
  * Return: Always 0 -success
  */
-void puts(char *str)
+void put2(char *str)
 {
 	int c = 0;
 	int i;
