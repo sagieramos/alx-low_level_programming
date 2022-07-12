@@ -9,4 +9,5 @@ Write a function that prints a string, followed by a new line, to stdout.
 Write a function that prints a string, in reverse, followed by a new line.
 5. A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes
 Write a function that reverses a string.
-
+6. Half the lies they tell about me aren't true
+Write a function that prints every other character of a string, starting with the first character, followed by a new line.
