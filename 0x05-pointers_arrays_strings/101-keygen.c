@@ -2,29 +2,24 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - random  numbers
+ * main - generates keygen.
  *
  * Return: 0 Always
 */
-
 int main(void)
 {
-	int i;
-	int j = 0;
-	int randnum;
-	char p[100];
+	int r = 0, c = 0;
+	time_t t;
 
-	srand(time(NULL));
-	for (i = 0; i < 100; i++)
+	srand((unsigned int) time(&t));
+	while (c < 2772)
 	{
-		randnum = random() % 127;
-		if (randnum > 32)
-		{
-			p[j] = randnum;
-			j++;
-		}
+		r = rand() % 128;
+		if ((c + r) > 2772)
+			break;
+		c = c + r;
+		printf("%c", r);
 	}
-	p[j] = '\0';
-	printf("%s", p);
+	printf("%c\n", (2772 - c));
 	return (0);
 }
