@@ -6,3 +6,5 @@ Write a function that concatenates two strings.
 Write a function that copies a string.
 3. strcmp
 Write a function that compares two strings.
+4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy
+Write a function that reverses the content of an array of integers.
