@@ -4,24 +4,22 @@
  * @dest: destination.
  * @src: source.
  * @n: amount of bytes used from src.
- * Return: the pointer to dest.
+ * Return: concatenate string.
  */
-char *_strncat(char *dest, char *src, int n)
+
+char *_strcat(char *dest, char *src)
 {
-	int count = 0, count1 = 0;
+	int i = 0, len = 0;
 
-	while (*(dest + count) != '\0')
+	while (*(dest + len) != '\0')
+		len++;
+	for (i = 0; *(src + i) != '\0'; i++)
 	{
-		count++;
+		*(dest + len) = *(src + i);
+		len++;
 	}
+	*(dest + len) = *(src + i);
 
-	while (count1 < n)
-	{
-		*(dest + count) = *(src + count1);
-		if (*(src + count1) == '\0')
-			break;
-		count++;
-		count1++;
-	}
 	return (dest);
 }
+
