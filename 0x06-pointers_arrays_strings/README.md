@@ -22,4 +22,7 @@ Write a function that prints an integer.
 Add one line to this code, so that the program prints a[2] = 98, followed by a new line
 11. It is the addition of strangeness to beauty that constitutes the romantic character in art
 Write a function that adds two numbers.
+12. Noise is a buffer, more effective than cubicles or booth walls
+Write a function that prints a buffer.
+
 
