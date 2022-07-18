@@ -1,24 +1,21 @@
 #include "main.h"
 
 /**
- * 1. memcpy - a function that copies memory area
- * The _memcpy() function copies n bytes from memory area src to memory area dest
- * Returns a pointer to dest
+ * memset - Fills the first n bytes of the memory area
+ *          pointed to by @s with the constant byte @c.
+ * @s: A pointer to the memory area to be filled.
+ * @c: The character to fill the memory area with.
+ * @n: The number of bytes to be filled.
  *
- * @s: The output and the return
- * @b: The input string
- * @n: The number of bytes
- *
- * Return: A ptr to the memory area s
- * /
- 
- char *_memset(char *s, char b, unsigned int n)
+ * Return: A pointer to the filled memory area @s.
+ */
+void *_memset(void *s, int c, size_t n)
 {
-	unsigned int count;
+	unsigned int index;
+	unsigned char *memory = s, value = c;
 
-	for (count = 0; count < n ; count++)
-	{
-		s[count] = b;
-	}
-	return (s);
+	for (index = 0; index < n; index++)
+		memory[index] = value;
+
+	return (memory);
 }
