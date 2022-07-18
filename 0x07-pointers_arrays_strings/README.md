@@ -10,5 +10,6 @@ Write a function that gets the length of a prefix substring.
 Write a function that searches a string for any of a set of bytes.
 5. strstr
 Write a function that locates a substring.
-
+6. Chess is mental torture
+Write a function that prints the chessboard.
 
