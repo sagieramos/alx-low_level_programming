@@ -30,3 +30,15 @@ a function that inserts a new node at a given position.
 
 10. Delete at index
 a function that deletes the node at index index of a listint_t linked list.
+
+11. Reverse list
+a function that reverses a listint_t linked list.
+
+12. Print (safe version)
+a function that prints a listint_t linked list
+
+13. Free (safe version)
+a function that frees a listint_t list.
+
+14. Find the loop
+a function that finds the loop in a linked list.
